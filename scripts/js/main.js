@@ -47,6 +47,7 @@ function addItem() {
 	ul.appendChild(li);
 
 	componentHandler.upgradeDom();
+	input.focus();
 }
 
 function removeItem(id) {
