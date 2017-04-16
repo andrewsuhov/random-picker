@@ -1,4 +1,4 @@
-h2, body {
+h2, .mdl-textfield__input, .mdl-textfield__label, .mdl-snackbar__text {
   font-family: 'Roboto Slab', serif;
 }
 .mdl-card {
