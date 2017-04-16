@@ -51,6 +51,7 @@ function addItem() {
 
 function removeItem(id) {
 	id.remove();
+	componentHandler.upgradeDom();
 }
 
 function randomize() {
