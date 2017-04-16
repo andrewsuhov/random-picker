@@ -56,9 +56,9 @@ function removeItem(id) {
 }
 
 function randomize() {
-	var numberOfElements = document.getElementById("list").getElementsByTagName("li").length;
-	var randomNumber = Math.floor(Math.random() * numberOfElements + 1);
-	var input = document.getElementById("value" + randomNumber);
+	var elements = document.getElementById("list").getElementsByTagName("input");
+	var randomNumber = Math.floor(Math.random() * elements.length);
+	var input = elements[randomNumber];
 	var value = input == null ? "Add items to list!" : input.value;
 	var data = {
 		message: value
