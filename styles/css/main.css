@@ -1,0 +1,10 @@
+h2, body {
+  font-family: 'Roboto Slab', serif;
+}
+.mdl-card {
+	max-width: 500px;
+	margin: auto;
+}
+.mdl-card__title, .margin-auto {
+	margin: auto;
+}
