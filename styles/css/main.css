@@ -2,7 +2,7 @@
   font-family: 'Roboto Slab', serif;
   color: white;
 }
-.mdl-textfield__label, .mdl-snackbar__text {
+.mdl-textfield__label, .mdl-snackbar__text, .mdl-tooltip {
   font-family: 'Roboto Slab', serif;
 }
 .mdl-layout {

@@ -13,37 +13,44 @@ function addItem() {
 	var spanPrimary = document.createElement("span");
 	spanPrimary.setAttribute("class", "mdl-list__item-primary-content");
 
-	var div = document.createElement("div");
-	div.setAttribute("class", "mdl-textfield mdl-js-textfield");
+	var divTextfield = document.createElement("div");
+	divTextfield.setAttribute("class", "mdl-textfield mdl-js-textfield");
 
 	var input = document.createElement("input");
 	input.setAttribute("class", "mdl-textfield__input");
 	input.setAttribute("type", "text");
 	input.setAttribute("id", "value" + number);
-	div.appendChild(input);
+	divTextfield.appendChild(input);
 
 	var label = document.createElement("label");
 	label.setAttribute("class", "mdl-textfield__label");
 	label.setAttribute("for", input.id);
 	label.appendChild(document.createTextNode("Item..."));
-	div.appendChild(label);
+	divTextfield.appendChild(label);
 
-	spanPrimary.appendChild(div);
+	spanPrimary.appendChild(divTextfield);
 
 	var spanSecondary = document.createElement("span");
-	spanSecondary.setAttribute("class", "mdl-list__item-secondary-action");
+	spanSecondary.setAttribute("class", "mdl-list__item-secondary-content");
 
-	var a = document.createElement("a");
-	a.setAttribute("class", "mdl-list__item-secondary-action");
-	a.setAttribute("href", "#");
-	a.setAttribute("onclick", "removeItem(" + li.id + ")");
+	var button = document.createElement("button");
+	button.setAttribute("class", "mdl-button mdl-js-button mdl-button--icon mdl-button--accent");
+	button.setAttribute("onclick", "removeItem(" + li.id + ")");
 
 	var i = document.createElement("i");
 	i.setAttribute("class", "material-icons");
+	i.setAttribute("id", "remove_icon");
 	i.appendChild(document.createTextNode("cancel"));
 
-	a.appendChild(i);
-	spanSecondary.appendChild(a);
+	button.appendChild(i);
+
+	var divTooltip = document.createElement("div");
+	divTooltip.setAttribute("class", "mdl-tooltip");
+	divTooltip.setAttribute("data-mdl-for", i.id);
+	divTooltip.appendChild(document.createTextNode("Remove item"));
+
+	spanSecondary.appendChild(button);
+	spanSecondary.appendChild(divTooltip);
 	li.appendChild(spanPrimary);
 	li.appendChild(spanSecondary);
 	ul.appendChild(li);
