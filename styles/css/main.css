@@ -2,7 +2,7 @@
   font-family: 'Roboto Slab', serif;
   color: white;
 }
-.mdl-textfield__label, .mdl-snackbar__text, .mdl-tooltip {
+.mdl-textfield__label, .mdl-snackbar__text {
   font-family: 'Roboto Slab', serif;
 }
 .mdl-layout {
@@ -25,5 +25,9 @@
 	width: 100%;
 }
 .mdl-textfield__label:after {
-	background-color: black;
+	background-color: #323232;
+}
+.mdl-tooltip {
+  font-family: 'Roboto Slab', serif;
+  background-color: #323232;
 }
