@@ -27,3 +27,6 @@
 .mdl-textfield__label:after {
 	background-color: black;
 }
+.material-icons {
+	color: #673AB7;
+}
