@@ -39,7 +39,7 @@ function addItem() {
 
 	var i = document.createElement("i");
 	i.setAttribute("class", "material-icons");
-	i.setAttribute("id", "remove_icon");
+	i.setAttribute("id", "icon" + elementNumber);
 	i.appendChild(document.createTextNode("cancel"));
 
 	button.appendChild(i);
