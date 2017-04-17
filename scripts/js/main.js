@@ -40,7 +40,7 @@ function addItem() {
 
 	var i = document.createElement("i");
 	i.setAttribute("class", "material-icons");
-	i.appendChild(document.createTextNode("remove_circle"));
+	i.appendChild(document.createTextNode("cancel"));
 
 	a.appendChild(i);
 	spanSecondary.appendChild(a);
