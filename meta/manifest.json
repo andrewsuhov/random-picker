@@ -1,0 +1,36 @@
+{
+  "short_name": "Random Picker",
+  "name": "Random Picker",
+  "icons": [
+    {
+      "src": "../images/icons/png/launcher-icon-1x.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "../images/icons/png/launcher-icon-2x.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "../images/icons/png/launcher-icon-3x.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "../images/icons/png/launcher-icon-4x.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "../images/icons/png/launcher-icon-8x.png",
+      "type": "image/png",
+      "sizes": "384x384"
+    }
+  ],
+  "start_url": "../index.html?utm_source=homescreen",
+  "theme_color": "#673AB7",
+  "background_color": "#673AB7",
+  "orientation": "portrait",
+  "display": "standalone"
+}
