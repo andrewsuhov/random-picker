@@ -3,6 +3,8 @@ var elementNumber = 1;
 function addItem() {
 	var number = elementNumber++;
 
+	document.getElementById("list_grid").removeAttribute("hidden");
+
 	var ul = document.getElementById("list");
 	var li = document.createElement("li");
 	li.setAttribute("class", "mdl-list__item");
@@ -52,6 +54,11 @@ function addItem() {
 
 function removeItem(id) {
 	id.remove();
+
+	if (document.getElementById("list").getElementsByTagName("li").length == 0) {
+		document.getElementById("list_grid").setAttribute("hidden", true);
+	}
+
 	componentHandler.upgradeDom();
 }
 
